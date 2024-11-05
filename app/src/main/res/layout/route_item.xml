@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:padding="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/cardBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Bus route name -->
+        <TextView
+            android:id="@+id/routeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus Route"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Bus route description or other details -->
+        <TextView
+            android:id="@+id/routeDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details about this bus route"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
